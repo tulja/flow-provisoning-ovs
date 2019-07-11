@@ -1,7 +1,7 @@
 ## Flow level Bandwidth Provisioning to the Docker Containers using OpenVSwitch (OVS)
 
 The goal of this Proof of Concept to show the flow level bandwidth provisioning using the OvS Switch. 
-There are three phases of recognizing the attack.
+We achieve it using below steps.
 *    Docker Networking using OVS 
 *    Creation of OVS Queues 
 *    Adding the Flow Rules
@@ -9,6 +9,8 @@ There are three phases of recognizing the attack.
 
 
 In this setup we have two Docker Containers. We attach the two docker containers to OVS and test the bandwidth provisioning using them. 
+
+
 ![Alt text](./images/flowOVS.jpg?raw=true "OVS Setup")
 
 
