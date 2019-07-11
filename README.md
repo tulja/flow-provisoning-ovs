@@ -10,9 +10,7 @@ We achieve it using below steps.
 
 In this setup we have two Docker Containers. We attach the two docker containers to OVS and test the bandwidth provisioning using them. 
 
-
 ![Alt text](./images/flowOVS.jpg?raw=true "OVS Setup")
-
 
 ### Dependencies for the setup
 *    Ubuntu 16.04 
