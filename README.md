@@ -73,12 +73,12 @@ ping 10.0.0.3
 ovs-vsctl --data=bare --no-heading --columns=name find interface \
              external_ids:container_id="cont1"  \
              external_ids:container_iface="eth0"
-#output from above will the ovs-port-id for cont1. Note it for next step.  
+#output from above will be the ovs-port-id for cont1. Note it for next step.  
 
 ovs-vsctl --data=bare --no-heading --columns=name find interface \
              external_ids:container_id="cont2"  \
              external_ids:container_iface="eth0"
-#output from above will the ovs-port-id for cont2. Note it for next step.             
+#output from above will be the ovs-port-id for cont2. Note it for next step.             
 ```
 * Let say we got the below values for ovs-port-ids (from the above step).
 ```
@@ -133,7 +133,7 @@ apt install -y iperf3
 iperf3 -s -p 9090
 ```
 
-* Parallely in another terminal execute **cont2**
+* Parallely in another terminal execute **cont1**
 ```
 docker exec -it cont1 bash
 apt install -y iperf3
